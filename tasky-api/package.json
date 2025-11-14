@@ -6,7 +6,7 @@
   "author": "Ryan-OLoughlin/1",
   "type": "commonjs",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "start": "babel-node index.js",
     "dev": "nodemon --exec npm start"
   },
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
   }
 }
