@@ -44,6 +44,7 @@ export const updateTask = async (data) => {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': window.localStorage.getItem('token')
             },
             body: JSON.stringify(data)
         }
