@@ -3,7 +3,13 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const TaskSchema = new Schema({
-  title:  { type: String, required: true },
+  title:  { 
+    type: String, 
+    required: true },
+  userId: { 
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+},
   description:  String ,
   deadline: Date,
   done: Boolean,
